@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Pagamentos</title>
+</head>
+<body>
+    <h1>Meu Site com Pagamentos</h1>
+    
+    <!-- Seu formulário de pagamento com Stripe -->
+    <form id="payment-form">
+        <div class="form-group">
+            <label for="card-element">Informações do Cartão de Crédito</label>
+            <div id="card-element">
+                <!-- Elemento do cartão Stripe será inserido aqui -->
+            </div>
+            <!-- Exibir erros do elemento do cartão -->
+            <div id="card-errors" role="alert"></div>
+        </div>
+        <button type="submit">Pagar</button>
+    </form>
+
+    <!-- Inclua a biblioteca do Stripe e o código JavaScript -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="seu_script.js"></script>
+</body>
+</html>
